@@ -20,6 +20,8 @@ Adoption of [QMK caps word feature](https://docs.qmk.fm/features/caps_word) for 
     </a>
 </div>
 
+![demo](./demo.mp4)
+
 ## ✨ Features
 
 - Automatically disables in the end of the word using [vim.o.iskeyword](https://neovim.io/doc/user/options.html#'iskeyword')
