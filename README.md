@@ -49,12 +49,11 @@ lazy.nvim:
 
 ## ⚙️ Configuration
 
-The is fairly simple, here is a list of options you can use with default values:
+List of options you can use with default values:
 
 ```lua
 {
--- Automatically changes - to * when caps word is activated
-
+  -- Automatically changes - to * when caps word is activated
   auto_underscore_inject = true,
   -- Does not turn the caps mode off on number input
   enable_numbers_in_caps = true,
@@ -68,14 +67,18 @@ The is fairly simple, here is a list of options you can use with default values:
 
 Simply use a keybinding to toggle the caps word mode, type your constant and press <space> or any other non word character. The mode will be ✨ automatically ✨ disabled and you can continue typing as usual.
 
-## Should I try it if I already use qmk caps word?
+![demo gif](./demo.gif)
+
+## ❓ FAQ
+
+### Should I try it if I already use qmk caps word?
 
 No if you totally like it, but I did becuase:
 
-- qmk caps word does not know about your keybindings in insert mode and actually breaks them by changing the emitted keys
+- QMK caps word does not know about your keybindings in insert mode and actually breaks them by changing the emitted keys
 - it can't disable itself on insert leave which is useful
 - this plugin is buffer local which helps when jumping between splits
 
-## Self promotion
+## 🏆 Self promotion
 
 If you like this little tool subscribe to my [Twitter/X](https://x.com/neogoose_btw) for more updates on my open source work.
