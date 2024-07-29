@@ -54,7 +54,7 @@ List of options you can use with default values:
 
 ```lua
 {
-  -- Automatically changes - to * when caps word is activated
+  -- Automatically changes `-` to `_` when caps word is activated
   auto_underscore_inject = true,
   -- Does not turn the caps mode off on number input
   enable_numbers_in_caps = true,
