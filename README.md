@@ -12,8 +12,8 @@ Adoption of [QMK caps word feature](https://docs.qmk.fm/features/caps_word) for 
     <a href="https://github.com/dmtrKovalenko/caps-word.nvim">
       <img alt="Repo Size" src="https://img.shields.io/github/repo-size/dmtrKovalenko/caps-word.nvim?color=%23DDB6F2&label=SIZE&logo=pagespeedinsights&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
     </a>
-    <a href="https://twitter.com/intent/follow?screen_name=folke">
-      <img alt="follow on Twitter" src="https://img.shields.io/twitter/follow/neogoose_btw?style=for-the-badge&logo=x&color=8aadf3&logoColor=D9E0EE&labelColor=302D41" />
+    <a href="https://twitter.com/intent/follow?screen_name=neogoose_btw">
+      <img alt="follow on Twitter" src="https://img.shields.io/twitter/follow/neogoose_btw?style=for-the-badge&user=neogoose_btw&logo=x&color=8aadf3&logoColor=D9E0EE&labelColor=302D41" />
     </a>
 </div>
 
