@@ -1,12 +1,8 @@
-
 # Caps Word for neovim
 
 Adoption of [QMK caps word feature](https://docs.qmk.fm/features/caps_word) for neovim. Provides a better experience for typing SCREAMING_SNAKE_CASE words automatically disables at the end of the word.
 
 <div align="left"><p>
-    <a href="https://github.com/dmtrKovalenko/caps-word.nvim/releases/latest">
-      <img alt="Latest release" src="https://img.shields.io/github/v/release/dmtrKovalenko/caps-word.nvim?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41&include_prerelease&sort=semver" />
-    </a>
     <a href="https://github.com/dmtrKovalenko/caps-word.nvim/pulse">
       <img alt="Last commit" src="https://img.shields.io/github/last-commit/dmtrKovalenko/caps-word.nvim?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
     </a>
@@ -21,9 +17,7 @@ Adoption of [QMK caps word feature](https://docs.qmk.fm/features/caps_word) for 
     </a>
 </div>
 
-
 https://github.com/user-attachments/assets/be198aac-2c3a-4415-aff0-9f8913e45480
-
 
 ## ✨ Features
 
