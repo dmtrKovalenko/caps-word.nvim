@@ -21,7 +21,8 @@ https://github.com/user-attachments/assets/be198aac-2c3a-4415-aff0-9f8913e45480
 
 ## ✨ Features
 
-- Automatically disables in the end of the word using [vim.o.iskeyword](https://neovim.io/doc/user/options.html#'iskeyword')
+Automatically disables at the end of the word using [vim.o.iskeyword](https://neovim.io/doc/user/options.html#'iskeyword')
+
 - Automatically disables on exiting insert mode
 - Replaces "-" with "\_" so you can type snake-case words instead
 
@@ -65,20 +66,20 @@ List of options you can use with default values:
 
 ## 🚀 Usage
 
-Simply use a keybinding to toggle the caps word mode, type your constant and press <space> or any other non word character. The mode will be ✨ automatically ✨ disabled and you can continue typing as usual.
+Simply use a keybinding to toggle the caps word mode, type your constant and press <space>, or any other non-word character. The mode will be ✨ automatically ✨ disabled and you can continue typing as usual.
 
 ![demo gif](./demo.gif)
 
 ## ❓ FAQ
 
-### Should I try it if I already use qmk caps word?
+### Should I try it if I already use QMK caps word?
 
-No if you totally like it, but I did becuase:
+No, if you absolutely like it, but I did because:
 
-- QMK caps word does not know about your keybindings in insert mode and actually breaks them by changing the emitted keys
-- it can't disable itself on insert leave which is useful
-- this plugin is buffer local which helps when jumping between splits
+- QMK caps word does not know about your keybindings in insert mode and breaks them by changing the emitted keys
+- it can't disable itself on insert leave, which is useful
+- this plugin is buffer-local which helps when jumping between splits
 
-## 🏆 Self promotion
+## 🏆 Self-promotion
 
 If you like this little tool subscribe to my [Twitter/X](https://x.com/neogoose_btw) for more updates on my open source work.
