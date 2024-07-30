@@ -1,4 +1,4 @@
-*caps-word-docs.txt*       For Neovim >= 0.8.0       Last change: 2024 July 29
+*caps-word-docs.txt*       For Neovim >= 0.8.0       Last change: 2024 July 30
 
 ==============================================================================
 Table of Contents                           *caps-word-docs-table-of-contents*
@@ -84,8 +84,8 @@ List of options you can use with default values:
 USAGE                              *caps-word-docs-caps-word-for-neovim-usage*
 
 Simply use a keybinding to toggle the caps word mode, type your constant and
-press , or any other non-word character. The mode will be automatically
-disabled and you can continue typing as usual.
+press `<space>`, or any other non-word character. The mode will be
+automatically disabled and you can continue typing as usual.
 
 
 FAQ                                  *caps-word-docs-caps-word-for-neovim-faq*
