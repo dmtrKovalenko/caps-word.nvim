@@ -66,7 +66,7 @@ List of options you can use with default values:
 
 ## 🚀 Usage
 
-Simply use a keybinding to toggle the caps word mode, type your constant and press <space>, or any other non-word character. The mode will be ✨ automatically ✨ disabled and you can continue typing as usual.
+Simply use a keybinding to toggle the caps word mode, type your constant and press `<space>`, or any other non-word character. The mode will be ✨ automatically ✨ disabled and you can continue typing as usual.
 
 ![demo gif](./demo.gif)
 

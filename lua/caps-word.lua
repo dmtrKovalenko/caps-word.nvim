@@ -19,8 +19,11 @@ M.config = config
 ---@param args Config?
 M.setup = function(args)
   M.config = vim.tbl_deep_extend("force", M.config, args or {})
-  -- ther \\k uses is_keyword option which is ideal for validating if this is a word
-  M.config.match_word_string = config.enable_numbers_in_caps and "\\K" or "\\k"
+
+  if not M.config.match_word_string then
+    -- ther \\k uses is_keyword option which is ideal for validating if this is a word
+    M.config.match_word_string = config.enable_numbers_in_caps and "\\K" or "\\k"
+  end
 end
 
 M.toggle = function()
