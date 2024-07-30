@@ -1,9 +1,9 @@
 local M = {}
 
-vim.api.nvim_create_augroup("ChangeToUpperCase", { clear = true })
+vim.api.nvim_create_augroup("CapsWord", { clear = true })
 
 local function turn_off(bufnr)
-  vim.api.nvim_clear_autocmds({ group = "ChangeToUpperCase", buffer = bufnr })
+  vim.api.nvim_clear_autocmds({ group = "CapsWord", buffer = bufnr })
   vim.b[bufnr].caps_word_active = false
 end
 
@@ -14,7 +14,7 @@ M.toggle_caps_word = function(config)
     turn_off(bufnr)
   else
     vim.api.nvim_create_autocmd("InsertCharPre", {
-      group = "ChangeToUpperCase",
+      group = "CapsWord",
       buffer = bufnr,
       callback = function()
         local char = vim.v.char
@@ -34,7 +34,7 @@ M.toggle_caps_word = function(config)
 
     -- Add an autocommand to clear the group on InsertLeave
     vim.api.nvim_create_autocmd("InsertLeave", {
-      group = "ChangeToUpperCase",
+      group = "CapsWord",
       buffer = bufnr,
       callback = function()
         turn_off(bufnr)
