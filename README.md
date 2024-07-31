@@ -60,6 +60,10 @@ List of options you can use with default values:
   enable_numbers_in_caps = true,
   -- Provide custom vim match regex for detecting end of the word (default is vim.o.iskeyword)
   match_word_string = nil,
+  -- Callback when caps word mode is activated
+  enter_callback = nil,
+  -- Callback when caps word mode is deactivated
+  exit_callback = nil,
 }
 
 ```
@@ -71,6 +75,34 @@ Simply use a keybinding to toggle the caps word mode, type your constant and pre
 ![demo gif](./demo.gif)
 
 ## ❓ FAQ
+
+### How can I see when the plugin turns on and off?
+
+You can use the callbacks provided in the options to send a notifications or print messages in the status line.
+
+```lua
+  {
+    "dmtrKovalenko/caps-word.nvim",
+    dir = "~/dev/caps-word.nvim",
+    lazy = true,
+    opts = {
+      enter_callback = function()
+        vim.notify("Caps Word: On", "info", { title = "Caps Word" })
+      end,
+      exit_callback = function()
+        vim.notify("Caps Word: Off", "info", { title = "Caps Word" })
+      end,
+    },
+    keys = {
+      {
+        mode = { "i", "n" },
+        "<C-s>",
+        "<cmd>lua require('caps-word').toggle()<CR>",
+      },
+    },
+  },
+
+```
 
 ### Should I try it if I already use QMK caps word?
 
