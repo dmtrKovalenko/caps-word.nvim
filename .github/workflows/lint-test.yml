@@ -1,6 +1,10 @@
 ---
-on: [push, pull_request]
 name: lint-test
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   stylua:
@@ -18,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        nvim-versions: ['stable', 'nightly']
+        nvim-versions: ["stable", "nightly"]
     name: test
     steps:
       - name: checkout

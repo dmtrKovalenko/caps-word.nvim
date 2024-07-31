@@ -1,8 +1,9 @@
+name: docs
 on:
   push:
-    branches:
-      - main
-name: docs
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   docs:
