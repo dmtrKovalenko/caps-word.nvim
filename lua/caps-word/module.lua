@@ -2,16 +2,22 @@ local M = {}
 
 vim.api.nvim_create_augroup("CapsWord", { clear = true })
 
-local function turn_off(bufnr)
+---@param bufnr number
+---@param config Config
+local function turn_off(bufnr, config)
   vim.api.nvim_clear_autocmds({ group = "CapsWord", buffer = bufnr })
   vim.b[bufnr].caps_word_active = false
+
+  if config and config.exit_callback then
+    config.exit_callback()
+  end
 end
 
 ---@param config Config
 M.toggle_caps_word = function(config)
   local bufnr = vim.api.nvim_get_current_buf()
   if vim.b[bufnr].caps_word_active then
-    turn_off(bufnr)
+    turn_off(bufnr, config)
   else
     vim.api.nvim_create_autocmd("InsertCharPre", {
       group = "CapsWord",
@@ -27,7 +33,7 @@ M.toggle_caps_word = function(config)
         if vim.fn.match(char, config.match_word_string or "\\K") == 0 then
           vim.v.char = vim.fn.toupper(char)
         else
-          turn_off(bufnr)
+          turn_off(bufnr, config)
         end
       end,
     })
@@ -37,11 +43,14 @@ M.toggle_caps_word = function(config)
       group = "CapsWord",
       buffer = bufnr,
       callback = function()
-        turn_off(bufnr)
+        turn_off(bufnr, config)
       end,
     })
 
     vim.b[bufnr].caps_word_active = true
+    if config and config.enter_callback then
+      config.enter_callback()
+    end
   end
 end
 
