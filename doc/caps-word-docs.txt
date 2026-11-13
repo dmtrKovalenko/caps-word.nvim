@@ -136,7 +136,7 @@ No, if you absolutely like it, but I did because:
 SELF-PROMOTION            *caps-word-docs-caps-word-for-neovim-self-promotion*
 
 If you like this little tool subscribe to my Twitter/X
-<https://x.com/neogoose_btw> for more updates on my open source work.
+<https://x.com/0xfflock> for more updates on my open source work.
 
 ==============================================================================
 2. Links                                                *caps-word-docs-links*
